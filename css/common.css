@@ -40,13 +40,15 @@ label, button{cursor:pointer}
 		color:#FC6363;
 		line-height: 25px;
 		}
-	header > .menu{
+	header > .menu
+	{
 			width: 50%;
 			height: 100%;
 			float: left; 
-		}
+	}
 
-	header > .menu > div{
+	header > .menu > div
+	{
 		width: 600px;
 		float: right;
 		height: 100%;
@@ -58,7 +60,6 @@ label, button{cursor:pointer}
 	}
 	header > .menu > div > div:before
 	{
-
 		top: 0;
 		content:''; 
 		width:150px; height:100px; 
@@ -88,7 +89,8 @@ label, button{cursor:pointer}
 		 line-height:100px; position:relative;
 		  font-size:16px; cursor:pointer
 		}
-	header > .menu > div > div .sub{
+	header > .menu > div > div .sub
+	{
 		width:100%; height:50px;
 		 background:rgba(255,255,255,0.7); 
 		 text-align:center; line-height:50px;
@@ -96,7 +98,8 @@ label, button{cursor:pointer}
 		 position:relative;
 		 font-size:12px; 
 		 border-bottom:#F79696 solid 1px;
-		 cursor:pointer}
+		 cursor:pointer
+		}
 	header > .menu > div > div .sub:nth-child(2)
 	{
 		transform:translateY(-50px);
@@ -114,10 +117,11 @@ label, button{cursor:pointer}
 		transform:translateY(-150px);
 		z-index:2;
 		 transition:all 1.5s
-		}
+	}
 			
 
-header > nav > ul > li > ul{
+header > nav > ul > li > ul
+{
 	display: none;
 	width: auto;
 	list-style: none;
