@@ -286,3 +286,124 @@ body{
 		}
 			.intro > .img > .box .con p:nth-child(1){font-size:16px}
 			.intro > .img > .box .con p:nth-child(2){margin-top:10px; font-size:14px}
+
+/*big image section*/
+
+#view{display: none;}
+#view:checked ~ .big_image{height: 750px}
+#view:checked ~ .big_image .box:nth-child(1){transform: rotate(0deg); transition: all 1.5s}
+#view:checked ~ .big_image .box:nth-child(2) .con:nth-child(1){transform: rotate(0deg); transition: all 0.5s}
+#view:checked ~ .big_image .box:nth-child(2) .con:nth-child(2){transform: rotate(0deg); transition: all 1s}
+#view:checked ~ .big_image .box:nth-child(2) .con:nth-child(3){transform: rotateY(0deg); transition: all 1.5s}
+.big_image
+{
+	width: 100%; height: 350px;
+	float: left;
+	background: url(../images/s3.jpg);
+	background-size: cover;
+	overflow: hidden;
+}
+	.big_image .now
+	{
+		width: 100%; height: 350px;
+		float: left;
+		padding-top: 140px;
+		text-align: center;
+	}
+		.big_image .now p{color: #fff; text-shadow: 1px 1px 5px #000;}
+		.big_image .now label
+		{
+			width: 120px; height: 35px;
+			border: #fff solid 1px; color: #fff;
+			background: none;
+			margin-top: 35px;
+			line-height: 35px; display: block;
+			transition : all .5s;
+		}
+		.big_image .now label:hover 
+		{
+			color: #000;
+			background: #fff;
+		}
+	.big_image .hide 
+	{
+		height: 325px;
+		overflow: hidden;
+		float: left; padding: 0 30px;
+	}
+	.big_image .box
+	{
+		width: calc(50% -15px); height: 290px;
+		float: left;
+		overflow: hidden;
+	}
+		.big_image .box:nth-child(1)
+		{
+			margin-right: 15px;
+			box-shadow: 1px 1px 5px #000;
+			transform:rotate(90deg);
+			transform-origin: top left;
+		}
+			.big_image .box:nth-child(1) .img
+			{
+				width: 100%; height: 65%;
+				float: left
+				background: url(../images/t1.jpg);
+				-webkit-background-size: cover;
+				background-size: cover;
+				background-position: center center;
+			}
+			.big_image .box:nth-child(1) .text
+			{
+				width: 100%; height: 35%;
+				background: #fff; 
+				padding: 12.5px; float: left;
+			}
+				.big_image .box:nth-child(1) .text p:nth-child(1)
+				{
+					font-size: 18px; padding-bottom: 5px;
+				}
+				.big_image .box:nth-child(1) .text p:nth-child(2)
+				{
+					font-size:  13.3px; background: #fff;
+				}
+		.big_image .box:nth-child(2){padding-left: 15px}
+
+		.big_image .box .con
+		{
+			width: 100%; height: 30%;
+			margin-bottom: 2%;
+			float: left;
+			box-shadow: 1px 1px 5px #000;
+			transform: rotate(90deg); transform-origin: top left;
+		}
+			.big_image .box .con .img
+			{
+				width: 50%; height: 100%;
+				float: left;
+			}
+			.big_image .box .con:nth-child(1) .img
+			{
+				background: url(../images/t2.jpg);
+				-webkit-background-size: cover;
+				background-size: cover;
+				background-position: center center;
+			}
+			\.big_image .box .con:nth-child(2) .img
+			{
+				background: url(../images/t3.jpg);
+				-webkit-background-size: cover;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			.big_image .box .con:nth-child(3) .img
+			{
+				background: url(../images/t4.jpg);
+				-webkit-background-size: cover;
+				background-size: cover;
+				background-position: center center;
+			}
+				.big_image .box .con .text p:nth-child(1){font-size: 15px; font-weight: bold;}
+				.big_image .box .con .text p:nth-child(2){font-size: 13px; margin-top: 10px}	
+	
