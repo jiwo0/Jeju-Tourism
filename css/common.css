@@ -1,4 +1,5 @@
 
+
 /*Default*/
 *{margin:0 auto; padding:0px; border:0px; box-sizing:border-box}
 body{font-family:'MalgunGothic'; animation:bgi 4s infinite; background:url(../images/bg3.png)}
@@ -32,7 +33,7 @@ label, button{cursor:pointer}
 		padding: 0 30px;
 	}
 	header > .logo {
-		padding-top:25px; 
+		padding-top:25px;
 		font-size:20px;
 		float: left;
 		width: 50%;
@@ -44,7 +45,7 @@ label, button{cursor:pointer}
 	{
 			width: 50%;
 			height: 100%;
-			float: left; 
+			float: left;
 	}
 
 	header > .menu > div
@@ -54,28 +55,28 @@ label, button{cursor:pointer}
 		height: 100%;
 	}
 	header > .menu > div > div{
-		width:150px; height:100%; 
-		float:left; 
+		width:150px; height:100%;
+		float:left;
 		position:relative
 	}
 	header > .menu > div > div:before
 	{
 		top: 0;
-		content:''; 
-		width:150px; height:100px; 
-		background:#F79696; 
-		position:absolute; 
+		content:'';
+		width:150px; height:100px;
+		background:#F79696;
+		position:absolute;
 		bottom:0px; left:0px;
 		opacity:0;
 		transform-origin:left bottom;
-		transition:all 1s; 
+		transition:all 1s;
 		transform:rotate(-90deg);
 		z-index:-1
 		}
 	header > .menu > div > div:hover:before
 	{
-		opacity:0.3; 
-		z-index:1000; 
+		opacity:0.3;
+		z-index:1000;
 		transform:rotate(0deg)
 	}
 	header > .menu > div > div:hover .sub
@@ -84,9 +85,9 @@ label, button{cursor:pointer}
 	}
 		header > .menu > div > div .main
 		{
-			width:100%; height:100px; 
-			background:#fff; z-index:10; 
-			text-align:center; 
+			width:100%; height:100px;
+			background:#fff; z-index:10;
+			text-align:center;
 			 line-height:100px;
 			  position:relative;
 			  font-size:16px; cursor:pointer
@@ -94,11 +95,11 @@ label, button{cursor:pointer}
 		header > .menu > div > div .sub
 		{
 			width:100%; height:50px;
-			 background:rgba(255,255,255,0.7); 
+			 background:rgba(255,255,255,0.7);
 			 text-align:center; line-height:50px;
-			 float:left; 
+			 float:left;
 			 position:relative;
-			 font-size:12px; 
+			 font-size:12px;
 			 border-bottom:#F79696 solid 1px;
 			 cursor:pointer
 			}
@@ -111,7 +112,7 @@ label, button{cursor:pointer}
 		header > .menu > div > div .sub:nth-child(3)
 		{
 			transform:translateY(-100px);
-			z-index:3; 
+			z-index:3;
 			transition:all 1s
 		}
 		header > .menu > div > div .sub:nth-child(4)
@@ -141,7 +142,7 @@ label, button{cursor:pointer}
 			left: 0;
 			perspective : 1500px;
 			backface-visibility: hidden;
-		}	
+		}
 		.main_image > .img > div > div
 		{
 			width: 50%;
@@ -191,7 +192,7 @@ label, button{cursor:pointer}
 	{
 		0%{z-index:3}
 		99%{z-index:3}
-		100%{z-index:1}	
+		100%{z-index:1}
 	}
 	#main1:checked ~ .img > div:nth-child(3){animation:main_image .6s}
 	#main1:checked ~ .img > div:nth-child(1){z-index:2}
@@ -199,21 +200,21 @@ label, button{cursor:pointer}
 	#main1:checked ~ .img > div:nth-child(3) div:last-child{transform:rotateY(-180deg); backface-visibility:hidden;transition:transform 2s}
 	#main1:checked ~ .img > div:nth-child(1) div:first-child{transform:rotateY(0deg); transition:transform 2s}
 	#main1:checked ~ .next > label:nth-child(2){display:block}
-	
+
 	#main2:checked ~ .img > div:nth-child(1){animation:main_image .6s}
 	#main2:checked ~ .img > div:nth-child(2){z-index:2}
 	#main2:checked ~ .img > div:nth-child(1) div:first-child{transform:rotateY(0deg)}
 	#main2:checked ~ .img > div:nth-child(1) div:last-child{transform:rotateY(-180deg); backface-visibility:hidden;transition:transform 2s}
 	#main2:checked ~ .img > div:nth-child(2) div:first-child{transform:rotateY(0deg); transition:transform 2s}
 	#main2:checked ~ .next > label:nth-child(3){display:block}
-	
+
 	#main3:checked ~ .img > div:nth-child(2){animation:main_image .6s}
 	#main3:checked ~ .img > div:nth-child(3){z-index:2}
 	#main3:checked ~ .img > div:nth-child(2) div:first-child{transform:rotateY(0deg)}
 	#main3:checked ~ .img > div:nth-child(2) div:last-child{transform:rotateY(-180deg); backface-visibility:hidden; transition:transform 2s}
 	#main3:checked ~ .img > div:nth-child(3) div:first-child{transform:rotateY(0deg); transition:transform 2s; }
 	#main3:checked ~ .next > label:nth-child(1){display:block}
-	
+
 /*INTRODUCTION*/
 html{
 	width: 100%; height:100%;
@@ -239,11 +240,11 @@ body{
 		width: 100%; text-align: center;
 		line-height: 96px; font-weight: bold; font-size: 36px;
 	}
-	.intro > .img 
+	.intro > .img
 	{
 		width: 100%; height: calc(100% - 125px)
 	}
-		.intro > .img > .box 
+		.intro > .img > .box
 		{
 			position: relative;
 			background-color: rgba(0,0,0,0.5);
@@ -265,19 +266,19 @@ body{
 			{
 				content: '';
 				display: block;
-				background:url(../images/h1.jpg); 
+				background:url(../images/h1.jpg);
 				width:100%; height:130%;
 				 background-size:cover;
 			}
 			.intro > .img > .box:nth-child(2) .bg:before{
 				content: '';
 				display: block;
-				background:url(../images/h2.jpg); 
+				background:url(../images/h2.jpg);
 				width:100%; height:130%;
 				 background-size:cover;
 			}
 		.intro > .img > .box .con
-		{	
+		{
 			position: relative; z-index: 5;
 			width: 100%; height: 100%;
 			text-align: center;
@@ -320,12 +321,12 @@ body{
 			line-height: 35px; display: block;
 			transition : all .5s;
 		}
-		.big_image .now label:hover 
+		.big_image .now label:hover
 		{
 			color: #000;
 			background: #fff;
 		}
-	.big_image .hide 
+	.big_image .hide
 	{
 		height: 325px;
 		overflow: hidden;
@@ -333,7 +334,7 @@ body{
 	}
 	.big_image .box
 	{
-		width: calc(50% -15px); height: 290px;
+		width: calc(50% - 15px); height: 290px;
 		float: left;
 		overflow: hidden;
 	}
@@ -347,7 +348,7 @@ body{
 			.big_image .box:nth-child(1) .img
 			{
 				width: 100%; height: 65%;
-				float: left
+				float: left;
 				background: url(../images/t1.jpg);
 				-webkit-background-size: cover;
 				background-size: cover;
@@ -356,7 +357,7 @@ body{
 			.big_image .box:nth-child(1) .text
 			{
 				width: 100%; height: 35%;
-				background: #fff; 
+				background: #fff;
 				padding: 12.5px; float: left;
 			}
 				.big_image .box:nth-child(1) .text p:nth-child(1)
@@ -371,6 +372,7 @@ body{
 
 		.big_image .box .con
 		{
+		 background-color: #fff;
 			width: 100%; height: 30%;
 			margin-bottom: 2%;
 			float: left;
@@ -389,7 +391,7 @@ body{
 				background-size: cover;
 				background-position: center center;
 			}
-			\.big_image .box .con:nth-child(2) .img
+			.big_image .box .con:nth-child(2) .img
 			{
 				background: url(../images/t3.jpg);
 				-webkit-background-size: cover;
@@ -405,5 +407,4 @@ body{
 				background-position: center center;
 			}
 				.big_image .box .con .text p:nth-child(1){font-size: 15px; font-weight: bold;}
-				.big_image .box .con .text p:nth-child(2){font-size: 13px; margin-top: 10px}	
-	
+				.big_image .box .con .text p:nth-child(2){font-size: 13px; margin-top: 10px;}
