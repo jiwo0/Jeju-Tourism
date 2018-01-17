@@ -24,7 +24,7 @@ label, button{cursor:pointer}
 /* header */
 	header{
 		width: 100%;
-		height: 100%;
+		height: 100px;
 		background: #fff;
 		position: relative;
 		float: left;
@@ -69,7 +69,8 @@ label, button{cursor:pointer}
 		opacity:0;
 		transform-origin:left bottom;
 		transition:all 1s; 
-		transform:rotate(-90deg); z-index:-1
+		transform:rotate(-90deg);
+		z-index:-1
 		}
 	header > .menu > div > div:hover:before
 	{
@@ -81,111 +82,201 @@ label, button{cursor:pointer}
 	{
 		transform:translateY(0px) !important
 	}
-	header > .menu > div > div .main
-	{
-		width:100%; height:100px; 
-		background:#fff; z-index:10; 
-		text-align:center; float:left;
-		 line-height:100px; position:relative;
-		  font-size:16px; cursor:pointer
+		header > .menu > div > div .main
+		{
+			width:100%; height:100px; 
+			background:#fff; z-index:10; 
+			text-align:center; 
+			 line-height:100px;
+			  position:relative;
+			  font-size:16px; cursor:pointer
 		}
-	header > .menu > div > div .sub
-	{
-		width:100%; height:50px;
-		 background:rgba(255,255,255,0.7); 
-		 text-align:center; line-height:50px;
-		 float:left; 
-		 position:relative;
-		 font-size:12px; 
-		 border-bottom:#F79696 solid 1px;
-		 cursor:pointer
-		}
-	header > .menu > div > div .sub:nth-child(2)
-	{
-		transform:translateY(-50px);
-		 z-index:4;
-		transition:all .5s
-		}
-	header > .menu > div > div .sub:nth-child(3)
-	{
-		transform:translateY(-100px);
-		z-index:3; 
-		transition:all 1s
-	}
-	header > .menu > div > div .sub:nth-child(4)
-	{
-		transform:translateY(-150px);
-		z-index:2;
-		 transition:all 1.5s
-	}
-			
-
-header > nav > ul > li > ul
-{
-	display: none;
-	width: auto;
-	list-style: none;
-	margin: 0; padding: 0;
-	position: relative;
-}
-header > nav > ul > li > ul > li{
-	top: -100px;
-	z-index: -100;
-	background-color: #fff;
-	opacity: 0.8;
-	border-bottom: 1px solid #ff5e56;
-	height: 50px;
-	line-height: 50px;
-}
-header > nav > ul >li:hover{
-	animation: 1s navi;
-}
-@keyframes navi{
-	from{
-		 	transform: rotate(180deg);
-		 	left: -100%;
-			background-color:rgba(255, 94, 86,0.4);
+		header > .menu > div > div .sub
+		{
+			width:100%; height:50px;
+			 background:rgba(255,255,255,0.7); 
+			 text-align:center; line-height:50px;
+			 float:left; 
+			 position:relative;
+			 font-size:12px; 
+			 border-bottom:#F79696 solid 1px;
+			 cursor:pointer
 			}
-	to{
-		background-color:rgba(255, 94, 86,0.4);
-		transform: rotate(360deg);
-	}
-}
-header > nav > ul >li:hover ul{
-	z-index: 100;
-	display: block;
-	animation: 2s lis;
-}
-@keyframes lis{
-	from{
-		margin-bottom: 400px;
-	}
-	to{
-		margin-bottom: 0;
-	}
-}
-header > div > img {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 98%;
-	height: 500px;
-	margin: 0;
-	padding: 0;
-}
-header > div > img:first-child{
-}
-header > div > .next {
-	float: right;
-	margin: 0;
-	width: 2%;
-	height: 500px;
-	background-color: rgb(150,150,150);
-	text-align: center;
-	line-height: 500px;
-	color: #fff;
-}
+		header > .menu > div > div .sub:nth-child(2)
+		{
+			transform:translateY(-50px);
+			 z-index:4;
+			transition:all .5s
+			}
+		header > .menu > div > div .sub:nth-child(3)
+		{
+			transform:translateY(-100px);
+			z-index:3; 
+			transition:all 1s
+		}
+		header > .menu > div > div .sub:nth-child(4)
+		{
+			transform:translateY(-150px);
+			z-index:2;
+			 transition:all 1.5s
+		}
 
-.main{
-	position: relative;
+/* Main_image*/
+.main_image
+{
+	width: 100%; height: 400px;
+	float: left; position: relative;
 }
+	.main_image > .img
+	{
+		width: 100%; height: 100%;
+		position: absolute;
+		top: 0; left: 0;
+	}
+		.main_image > .img > div
+		{
+			width: 100%; height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			perspective : 1500px;
+			backface-visibility: hidden;
+		}	
+		.main_image > .img > div > div
+		{
+			width: 50%;
+			position: absolute;
+			top: 0px;
+			overflow: hidden;
+			height: 100%;
+		}
+		.main_image > .img > div > div:nth-child(1)
+		{
+			left: 0;
+			transform-origin: 100% 0;
+			transform: rotateY(180deg);
+			backface-visibility: hidden;
+			z-index: 10
+		}
+		.main_image > .img > div > div:nth-child(2)
+		{
+			right: 0px;
+			transform-origin: 0 0;
+		}
+			.main_image > .img > div > div img
+			{
+				width: 200%;
+				position: absolute;
+				top: 0px
+			}
+			.main_image > .img > div > div:nth-child(1) img{left: 0px}
+			.main_image > .img > div > div:nth-child(2) img{right: 0px}
+	.main_image > .next label
+	{
+		position: absolute;
+		right: 0; top: 0;
+		width: 30px;
+		text-align: center;
+		line-height: 400px;
+		z-index: 10;
+		background-color: rgba(0,0,0,0.3);
+		color: #fff;
+		display: none;
+	}
+	.main_image > .next label:hover
+	{
+		background-color: #000;
+	}
+	@keyframes main_image
+	{
+		0%{z-index:3}
+		99%{z-index:3}
+		100%{z-index:1}	
+	}
+	#main1:checked ~ .img > div:nth-child(3){animation:main_image .6s}
+	#main1:checked ~ .img > div:nth-child(1){z-index:2}
+	#main1:checked ~ .img > div:nth-child(3) div:first-child{transform:rotateY(0deg)}
+	#main1:checked ~ .img > div:nth-child(3) div:last-child{transform:rotateY(-180deg); backface-visibility:hidden;transition:transform 2s}
+	#main1:checked ~ .img > div:nth-child(1) div:first-child{transform:rotateY(0deg); transition:transform 2s}
+	#main1:checked ~ .next > label:nth-child(2){display:block}
+	
+	#main2:checked ~ .img > div:nth-child(1){animation:main_image .6s}
+	#main2:checked ~ .img > div:nth-child(2){z-index:2}
+	#main2:checked ~ .img > div:nth-child(1) div:first-child{transform:rotateY(0deg)}
+	#main2:checked ~ .img > div:nth-child(1) div:last-child{transform:rotateY(-180deg); backface-visibility:hidden;transition:transform 2s}
+	#main2:checked ~ .img > div:nth-child(2) div:first-child{transform:rotateY(0deg); transition:transform 2s}
+	#main2:checked ~ .next > label:nth-child(3){display:block}
+	
+	#main3:checked ~ .img > div:nth-child(2){animation:main_image .6s}
+	#main3:checked ~ .img > div:nth-child(3){z-index:2}
+	#main3:checked ~ .img > div:nth-child(2) div:first-child{transform:rotateY(0deg)}
+	#main3:checked ~ .img > div:nth-child(2) div:last-child{transform:rotateY(-180deg); backface-visibility:hidden; transition:transform 2s}
+	#main3:checked ~ .img > div:nth-child(3) div:first-child{transform:rotateY(0deg); transition:transform 2s; }
+	#main3:checked ~ .next > label:nth-child(1){display:block}
+	
+/*INTRODUCTION*/
+body{
+	position: relative;
+	overflow-y:scroll;
+	perspective:2.1px;
+}
+.intro
+{
+	width: 100%;
+	height: 430px;
+	float: left;
+	background-color: #fff;
+}
+	.intro > .title
+	 {
+		height: 96px; float: left;
+		width: 100%; text-align: center;
+		line-height: 96px; font-weight: bold; font-size: 36px;
+	}
+	.intro > .img 
+	{
+		width: 100%; height: calc(100% - 125px)
+	}
+		.intro > .img > .box 
+		{
+			position: relative;
+			background-color: rgba(0,0,0,0.5);
+			overflow: hidden;
+			height: 100%;
+			float: left;
+		}
+		.intro > .img > .box:nth-child(1){width: calc(50% - 5px); margin-right: 5px}
+		.intro > .img > .box:nth-child(2){width: calc(50% - 5px); margin-left: 5px}
+			.intro > .img > .box .bg
+			{
+				width: 100%; height: 100%;
+				position: absolute;
+				top: 0px; left: 0px;
+				overflow: hidden;
+				transform:translateZ(-1px) scale(2.5,2.5);
+			}
+			.intro > .img > .box:nth-child(1) .bg:before
+			{
+				content: '';
+				display: block;
+				background:url(../images/h1.jpg); 
+				width:100%; height:130%;
+				 background-size:cover;
+			}
+			.intro > .img > .box:nth-child(2) .bg:before{
+				content: '';
+				display: block;
+				background:url(../images/h2.jpg); 
+				width:100%; height:130%;
+				 background-size:cover;
+			}
+		.intro > .img > .box .con
+		{	
+			position: relative; z-index: 5;
+			width: 100%; height: 100%;
+			text-align: center;
+			padding-top: 130px;
+			color: #fff; background-color: rgba(0,0,0,0.5);
+		}
+			.intro > .img > .box .con p:nth-child(1){font-size:16px}
+			.intro > .img > .box .con p:nth-child(2){margin-top:10px; font-size:14px}
