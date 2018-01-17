@@ -215,7 +215,13 @@ label, button{cursor:pointer}
 	#main3:checked ~ .next > label:nth-child(1){display:block}
 	
 /*INTRODUCTION*/
+html{
+	width: 100%; height:100%;
+	overflow: hidden;
+	position: relative;
+}
 body{
+	width: 100%; height: 100%;
 	position: relative;
 	overflow-y:scroll;
 	perspective:2.1px;
